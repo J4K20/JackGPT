@@ -39,6 +39,7 @@ Sprint 1 Progress Summary:
 - Add more to and improve UI by week 9
 - Make UI customizable by week 10
 - Add light and dark modes in free time (not a big feature to add)
+- Add tests by week 11
 
 ---
 
