@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# JackGPT
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A ChatGPT clone site and desktop app built using **Node**, **React**, **Websockets**, and **Electron**.
 
-## Available Scripts
+## 1. Project Title and Description
 
-In the project directory, you can run:
+**JackGPT** is a real-time ChatGPT communication application. It replicates the core function of ChatGPT, allowing users to interact with the OpenAI API using a mor emodern and customizable user interface.
 
-### `npm start`
+## 2. Problem Domain
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+OpenAI only offers one default user interface which may not fit every user's preferences or workflow. JackGPT aims to redesign the ChatGPT UI to make it more user-friendly, more customizable, and less cluttered; focusing on only showing UI elements the user will actually use.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 3. Features and Requirements
 
-### `npm test`
+### Features
+ - **Sprint 1:**
+    - Real-time ChatGPT communication through OpenAI API and Websockets
+    - Multiple conversations and viewable conversation history, stored locally
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ - **Sprint 2:**
+    - User-customizable UI through enabling/diabling UI elements made with React
+    - Ability to export and import conversations
+    - Light and dark mode UI's
 
-### `npm run build`
+### Requirements
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ - **Functional**: Users must be able to have conersations with ChatGPT, manage multiple conversations, and have a persistent chat history.
+ - **Non-Functional**: The application should have a customizable interface, two built-in themes, and the ability to import and export conversations.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 4. Data Model and Architecture
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Data Model
+ - **Frontend**: React-based UI that to recieve user input and display AI responses
+ - **Backend**: Node.js Express server that communicates between the client and OpenAI API
+ - **Storage**: Conversations will be stored locally using localStorage
 
-### `npm run eject`
+### Architecture
+ - **Session**: Stores user preferences
+ - **Conversation**: Contains a unique ID, name, and list of message ID's
+ - **Message**: Contains sender, timestamp, and timestamp
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 5. Tests
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ - **Manual Testing**: Code will be manually tested as it is written
+ - **Unit Testing**: Unit tests will be performed using Jest
+ - **Integration Tests**: Integration tests will be performed using Supertest
+ - **E2E Tests**: End to end tests will be performed using Playwright
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 6. Team Members and Roles
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Project by **Jack Dixon**
 
-## Learn More
+## 7. Links
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ - **Code Repository**: [Github Repo](https://github.com/J4K20/JackGPT)
+ - **Documentation**: [Docs Folder](./docs)
+ - **Presentation**: [PPP Presentation](./docs/presentation/ppp_individual.md)
