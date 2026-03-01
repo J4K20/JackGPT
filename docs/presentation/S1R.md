@@ -5,6 +5,14 @@ paginate: true
 title: S1R
 ---
 
+### Sprint 1 Results
+
+- [GitHub Repo](https://github.com/J4K20/JackGPT/tree/main)
+- Completed all planned features
+- Fulfilled all planed requirements
+
+---
+
 ### What Went Wrong:
 
 - I did not spend enough time on my individual project
