@@ -1,6 +1,7 @@
 {
   "name": "jackgpt",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
@@ -13,18 +14,31 @@
     "openai": "^6.18.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
+    "react-markdown": "^10.1.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "client": "npm start --prefix client",
     "server": "nodemon server/server.js",
-    "start": "concurrently \"npm run server\" \"npm run client\""
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "test:unit": "node --experimental-vm-modules node_modules/.bin/jest",
+    "test:integration": "node --experimental-vm-modules node_modules/.bin/jest server/tests/server.test.js",
+    "test:e2e": "playwright test tests/app.e2e.test.js"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
+    ]
+  },
+  "jest": {
+    "transform": {},
+    "roots": [
+      "<rootDir>/server"
+    ],
+    "testMatch": [
+      "**/*.test.js"
     ]
   },
   "browserslist": {
@@ -38,5 +52,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@jest/globals": "^30.3.0",
+    "@playwright/test": "^1.59.1",
+    "jest": "^27.5.1",
+    "supertest": "^7.2.2"
   }
 }
