@@ -17,7 +17,7 @@ app.post("/api/chat", async (req, res) => {
   const result = await client.responses.create({
     model: "gpt-4.1",
     input: messages,
-    max_output_tokens: 20,
+    max_output_tokens: 30000,
   });
   res.json({ text: result.output_text });
 });
