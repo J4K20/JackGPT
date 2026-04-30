@@ -41,6 +41,10 @@ npm install
 npm install --prefix client
 ```
 
+---
+
+## Installation
+
 3. Create a `.env` file in the root of the project
 
 ```bash
