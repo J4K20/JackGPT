@@ -1,10 +1,10 @@
 # JackGPT
 
-A ChatGPT clone site and desktop app built using **Node**, **React**, **Websockets**, and **Electron**.
+A ChatGPT clone site built using **Node**, **React**, and **OpenAI API**.
 
 ## 1. Project Title and Description
 
-**JackGPT** is a real-time ChatGPT communication application. It replicates the core function of ChatGPT, allowing users to interact with the OpenAI API using a mor emodern and customizable user interface.
+**JackGPT** is a real-time ChatGPT communication application. It replicates the core function of ChatGPT, allowing users to interact with the OpenAI API using a more modern and customizable user interface.
 
 ## 2. Problem Domain
 
@@ -14,30 +14,30 @@ OpenAI only offers one default user interface which may not fit every user's pre
 
 ### Features
  - **Sprint 1:**
-    - Real-time ChatGPT communication through OpenAI API and Websockets
+    - Real-time ChatGPT communication through OpenAI API
     - Multiple conversations and viewable conversation history, stored locally
 
  - **Sprint 2:**
-    - User-customizable UI through enabling/diabling UI elements made with React
+    - User-customizable UI through enabling/disabling UI elements made with React
     - Ability to export and import conversations
     - Light and dark mode UI's
 
 ### Requirements
 
- - **Functional**: Users must be able to have conersations with ChatGPT, manage multiple conversations, and have a persistent chat history.
+ - **Functional**: Users must be able to have conversations with ChatGPT, manage multiple conversations, and have a persistent chat history.
  - **Non-Functional**: The application should have a customizable interface, two built-in themes, and the ability to import and export conversations.
 
 ## 4. Data Model and Architecture
 
 ### Data Model
- - **Frontend**: React-based UI that to recieve user input and display AI responses
+ - **Frontend**: React-based UI that receives user input and display AI responses
  - **Backend**: Node.js Express server that communicates between the client and OpenAI API
  - **Storage**: Conversations will be stored locally using localStorage
 
 ### Architecture
  - **Session**: Stores user preferences
- - **Conversation**: Contains a unique ID, name, and list of message ID's
- - **Message**: Contains sender, timestamp, and timestamp
+ - **Conversation**: Contains a unique ID, name, and list of messages
+ - **Message**: Contains sender and message content
 
 ## 5. Tests
 
